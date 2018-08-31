@@ -1,0 +1,70 @@
+/* GERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topbar {
+    display: flex;
+    z-index: 99;
+    top: 0;
+    background-color: #3f8bee; 
+    height: 70px;
+}
+
+.topbar__img--logobranco {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;    
+}
+
+.topbar__menu-itens {
+    display: flex;
+    list-style: none;
+}
+
+.topbar__menu-item {
+    list-style: none;
+    display: none;
+}
+
+.topbar__menu-item-hamburguer {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.topbar__manu-hamburguer {
+    display: flex;
+    list-style: none;
+}
+
+.hamburguer {
+    width: 35px;
+
+}
+
+/*HEADER*/
+
+.background {
+    height: 100vh;
+    background-image: url(../img/bg-banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
