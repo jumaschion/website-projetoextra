@@ -2,46 +2,65 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     font-size: 10px;
+    font-family: 'Asap', Arial;
+
 }
 
-.container {
-    margin: 0 auto;
-    background-color: aqua;
+
+header {
+    display: flex;
+    text-align: center;
+}
+
+.topbar__menu-link--borda{
+    border: 2px solid rgba(255, 235, 176, 0.747);
+    border-radius: 8px 6px;
+    padding: 8px 15px;
+    color: #FFEBB0;
 }
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
+    font-family: 'Asap';
+    font-size: 1.7rem;
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.829);
+    
+}
+a:hover {
+    color: rgba(211, 195, 195, 0.75)
+}
+
+
+.topbar__logobranco {
+    margin-right: 100px;
 }
 
 .topbar {
-    display: flex;
-    z-index: 99;
+    position: absolute;
     top: 0;
-    background-color: #3f8bee; 
-    height: 70px;
+    width: 99%;
+    z-index: 99;
 }
 
-.topbar__img--logobranco {
+.topbar__menu {
+    width: 99%;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-.logo {
-    width: 120px;    
-}
 
-.topbar__menu-itens {
+.topbar__menu-itens{
     display: flex;
     list-style: none;
+    margin: 50px;
 }
 
-.topbar__menu-item {
-    list-style: none;
-    display: none;
-}
 
 .topbar__menu-item-hamburguer {
     display: flex;
@@ -56,15 +75,236 @@ a {
 
 .hamburguer {
     width: 35px;
+    display: none;
 
 }
 
 /*HEADER*/
 
 .background {
-    height: 100vh;
     background-image: url(../img/bg-banner.png);
     background-size: cover;
-    background-position: center;
-    height: 50vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 83vh;
+    text-align: center;
+    top: 0;
+
 }
+
+.caixa-titulo-subtitulo {
+    margin: 200px auto;
+    color: white;
+    font-family: 'Asap','Flamenco', Arial;
+    font-weight: lighter;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  
+}
+
+.titulo {
+    margin-top: 25px;
+    font-size: 4rem;
+    font-family: 'Flamenco', cursive;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.caixa-subtitulo{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.subtitulo {
+    width: 50%;
+    font-size: 2.4rem;
+}
+
+.caixa-btn-header {
+    margin-top: 40px;
+}
+
+.btn-yellow{
+  color: #8F783A;
+  background-color:#FFDD70;
+  padding: 15px 45px;
+  border-radius: 3px;
+  font-weight:bold;
+  font-size: 2.5rem;
+}
+
+/*SECTION SOBRE E COMO FUNCIONA ABAIXO */
+
+
+.caixa-sobre {
+    display: flex;
+    justify-content: center; 
+    width: 40%;
+    margin: 80px auto;
+    align-items: center;
+ 
+}
+
+.sobre {
+    margin-left: 40px;
+}
+
+.titulo-sobre {
+    font-family: 'Flamenco', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.subtitulo-sobre {
+    color:rgb(95, 93, 93);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* COMO FUNCIONA */
+
+.caixa-como-funciona {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 200px;
+    
+}
+
+.caixa-passo {
+    width: 25%;
+    text-align: center;
+}
+
+.titulo-como-funciona {
+  text-align:center;
+  font-family: 'Flamenco', cursive;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.paragrafo-passo {
+    color:rgb(95, 93, 93);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.p-negrito {
+    display: block;
+    font-weight: bold;
+    color:rgb(95, 93, 93);
+    font-size: 2.5rem;
+}
+
+/* SERVICOES */ 
+
+
+
+.titulo-servicos-header {
+  text-align:center;
+  font-family: 'Flamenco', cursive;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #000;
+  padding: 40px;
+
+}
+
+.servicos {
+    background: url(../img/bg-servicos.png);
+    background-size: cover;
+}
+
+.nossos-servicos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa-servicos {
+    background-color: #67BED3;
+    width: 25%;
+    margin: 60px 35px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgb(114, 114, 114);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-servicos {
+ 
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Asap','Flamenco', Arial;
+}
+
+.subtitulo-servicos {
+    color:rgb(255, 255, 255);
+    font-size: 2.3rem;
+    font-weight: 200;
+    margin: 5%; 
+}
+
+.btn-servicos {
+   margin:  30px auto;
+}
+
+/* CURIOSIDADES */ 
+
+.caixa-curiosidades {
+    display: inline-flex;
+    
+}
+
+
+.titulo-curiosidades {
+    text-align:center;
+  font-family: 'Flamenco', cursive;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 40px;
+
+}
+
+
+
+.subtitulo-amarelo {
+    color: #FCDF70;
+    font-size: 7rem;
+    font-weight: bold;
+    text-shadow: 0px 1px 2px black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.subtitulo-curiosidades {
+    color:rgb(255, 255, 255);
+    font-size: 2.3rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.curiosidades {
+    background-image: url(../img/bg-numeros.png);   
+    background-size: cover;
+}
+
+
+
+
+
+
