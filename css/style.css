@@ -33,7 +33,7 @@ a {
     
 }
 a:hover {
-    color: rgba(211, 195, 195, 0.75)
+    color: rgb(255, 255, 255)
 }
 
 
@@ -262,6 +262,7 @@ a:hover {
 
 .caixa-curiosidades {
     display: flex;
+    margin-right: 10%;
 }
 
 .titulo-curiosidades {
@@ -278,13 +279,15 @@ a:hover {
     font-size: 7rem;
     font-weight: bold;
     text-shadow: 0px 1px 2px black; 
+    text-align: center;
 }
 
 
 .subtitulo-curiosidades {
     color:rgb(255, 255, 255);
     font-size: 2.3rem;
-    width: 50%;
+    width: 65%;
+    margin: 0 auto;
     
 }
 
@@ -295,13 +298,16 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 
 /*FORMULARIO*/ 
 
+
 .contato {
     background-color: #F3F3F3;
+    height: 65vh;
 }
 
 .titulo-form {
@@ -315,28 +321,51 @@ a:hover {
     margin: 0 auto;
 }
 
-.form-nome {
+.form-nome-email {
     display: flex;
-    flex-direction: column;
+   flex-direction: row;
+}
+
+.email {
+    margin-left: 130px;
 }
 
 .form {
     display:flex;
-    justify-content: center;    
+    justify-content: center; 
+}
+
+.input-tamanho {
+    height: 3vh;
 }
 
 .bg-amarelo {
     resize: none;
     background-color: #FFEBB0;
     border: 1px solid #E5D7B0;
-    width: 100%;
-    height: 30px;
+    width: 98%;
     margin: 5px;
 }
+
 
 .text-form {
     color: #000;
     font-size: 2.5rem;
+}
+
+.btn-form {
+    display: block;
+    background-color: #339294;
+  color: white;
+  text-align:center;
+  padding: 5px 170px;
+  font-weight:bold;
+  font-size: 18px;
+  border-radius: 3px
+}
+
+.btn-form:hover{
+    background-color: rgb(255, 221, 112);
 }
 
 /* NEWSLETTER*/ 
@@ -382,3 +411,41 @@ a:hover {
     font-size: 2.5rem;
     padding: 10px 100px;
 }
+
+/* FOOTER */ 
+
+.footer {
+    padding: 3% 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #333333;
+  }
+
+  .footer-list-item {
+      font-size: 20px;
+      list-style: none;
+  }
+
+  .footer-text, .footer-email {
+      font-size: 15px;
+    
+  }
+  
+  .footer-logo_img {
+    width: 70%;
+ 
+  }
+
+  .footer-social {
+    text-align:center;
+  }
+  .footer-social-link {
+    width: 100%;
+  }
+  .footer-social-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin:5px auto;
+  }

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    
         <nav class="topbar">
             <div class="topbar__menu">
                 <a class="topbar__logobranco" href="#">
@@ -79,6 +79,7 @@
             <div class="caixa-titulo-como-funciona">
                 <h2 class="titulo-como-funciona">Entendi! Como funciona?</h2>
             </div>
+
             <div class="caixa-como-funciona">
                 <div class="caixa-passo"><img class="img-passo01" src="img/passo01.png" alt="Passo 1">
                     <p class="paragrafo-passo"><span class="p-negrito">Você nos diz quem é!</span>
@@ -97,7 +98,7 @@
                         ao máximo, sem perder horas montando um roteiro!</p>
                 </div>
             </div>
-    </div>
+ 
     </section>
     <section class="servicos">
 
@@ -140,17 +141,24 @@
         <div class="caixa-curiosidades">
 
             <div class="conteudo-curiosidades">
-                <p class="subtitulo-amarelo">80%</p>
+                <span class="subtitulo-amarelo">80%</span>
+            <div class="subtitulo-curiosidades">
                 <p class="subtitulo-curiosidades">É o que você economiza quando planeja uma viagem de antemão</p>
             </div>
+            </div>
+
             <div class="conteudo-curiosidades">
                 <p class="subtitulo-amarelo">50+</p>
+                <div class="subtitulo-curiosidades">
                 <p class="subtitulo-curiosidades">Localidades diferentes nossos consultores conhecem no mundo inteiro</p>
-
             </div>
+            </div>
+
             <div class="conteudo-curiosidades">
                 <p class="subtitulo-amarelo">1000+</p>
+                <div class="subtitulo-curiosidades">
                 <p class="subtitulo-curiosidades">Brasileiros viajar am no ano de 2016 </p>
+            </div>
             </div>
         </div>
     </section>
@@ -162,23 +170,29 @@
 
             <form action="Obrigada!">
 
-                <div class="form-nome">
-                    <label class="text-form" for="name">Nome</label>
-                    <input class="bg-amarelo" type="text" name="name">
+            <div>
+                <label class="text-form" for="name">Nome</label>
+          
+                <label class="text-form email" for="email">Email</label>
+            </div>
 
-                    <label class="text-form" for="email">Email</label>
-                    <input class="bg-amarelo" type="text" name="email">
+
+                <div class="form-nome-email">
+                    <input class="bg-amarelo input-tamanho" type="text" name="name">
+                    
+                
+                    <input class="bg-amarelo input-tamanho" type="text" name="email">
                 </div>
 
                 <div class="form-subject">
                     <label class="text-form" for="subject">Assunto</label>
-                    <input class="bg-amarelo" type="text" name="subject">
+                    <input class="bg-amarelo input-tamanho" type="text" name="subject">
                 </div>
 
                 <p class="form__titulo text-form">Mensagem</p class="form__titulo">
                 <textarea class=" bg-amarelo  text-area bg-amarelo" name="comentário" rows="10" cols="40"></textarea>
 
-                <input type="submit" value="Submit">
+                <a class="btn-form">Enviar</a>
             </form>
         </div>
     </section>
@@ -195,7 +209,36 @@
         </div>
     </section>
 
-    </div>
+    <footer class='footer'>
+
+            <ul class="footer-list">
+              <li class="footer-list-item">Sobre</li>
+              <li class="footer-list-item">Como funciona</li>
+              <li class="footer-list-item">Roteiros</li>
+              <li class="footer-list-item">Consultoria</li>
+              <li class="footer-list-item">Contato</li>
+            </ul>
+          
+            <div class="footer-logo">
+              <img src="img/logo-footer.png" alt="" class="footer-logo-img">
+              <div>
+              <p class="footer-text">Sharing Experiences</p>
+              <p class="footer-email">contato@gruppe.com</p>
+            </div>
+            </div>
+          
+            <div class="footer-social">
+               <h6 class="footer-social-title">Siga-nos nas redes sociais</h6>
+                <a href="" class="footer-social-link">
+                    <img src="img/fb-icon.png" alt="" class="footer-social-link-img">
+                  </a>
+              <a href="" class="footer-social-link">
+                  <img src="img/fb-icon.png" alt="" class="footer-social-link-img">
+                </a>
+            </div>
+          
+          </footer>
+ 
 </body>
 
 </html>
